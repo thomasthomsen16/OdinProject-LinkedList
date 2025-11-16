@@ -108,4 +108,20 @@ class LinkedList {
         }
         return null;
     }
+    toString(){
+        if(!this.head){
+            return null
+        }
+        let str = "";
+        let current=this.head;
+        while(current){
+            str+= `(${current.value})`;
+            if(current.nextNode){
+                str+="-->";
+            }
+            current=current.nextNode
+        }
+        str+="--> Null";
+        return str;
+    }
 }
