@@ -93,4 +93,19 @@ class LinkedList {
         }
         return false;
     }
+    find(value){
+        if(!this.head){
+            return null;
+        }
+        let current=this.head;
+        let index = 0;
+        while(current){
+            if(current.value===value){
+                return index
+            }
+            current=current.nextNode;
+            index++;
+        }
+        return null;
+    }
 }
