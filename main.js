@@ -35,4 +35,10 @@ class LinkedList {
         }
         return count
     }
+    head(){
+        if(!this.head){
+            return null;
+        }
+        return this.head;
+    }
 }
