@@ -80,4 +80,17 @@ class LinkedList {
         }
         current.nextNode=null;
     }
+    contains(value){
+        if(!this.head){
+            return false;
+        }
+        let current = this.head;
+        while(current){
+            if(current.value===value){    
+            return true;
+            } 
+            current=current.nextNode;
+        }
+        return false;
+    }
 }
